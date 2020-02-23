@@ -17,7 +17,7 @@ for count in range(0,int(top_how_many),50): # Loop created to change the URL acc
     website = requests.get(url)
     content = website.content
     soup = BeautifulSoup(content,'lxml')
-    anime_https://www1.putlocker.digital/search/Hotaru%20no%20Hakanames = soup.find_all('tr', {'class':'ranking-list'})
+    anime_names = soup.find_all('tr', {'class':'ranking-list'})
 
     # Printing each anime on page with Rank Position | Score | Anime Name
     for anime in anime_names:
@@ -40,4 +40,3 @@ anime_to_watch = anime_list[int(chosen_anime)-1]
 # Redirecting based on User's input
 watch_link = 'https://www1.putlocker.digital/search/' + '%20'.join(anime_to_watch.split())
 print('\nYou chose: ' + anime_to_watch + '\n To watch the anime, paste this URL into your browser. For your convenience it has been saved to your clipboard. \n'+watch_link)
-pyperclip.copy(watch_link)
