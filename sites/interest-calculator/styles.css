@@ -40,6 +40,29 @@ main {
 	padding-top: 3rem;
 }
 
+.currency-btn {
+	width: 6rem;
+	margin-left: 2rem;
+	display: flex;
+	justify-content: space-evenly;
+}
+
+
+.currency-btn input {
+	position: fixed;
+	margin-left: 100rem;
+	opacity:0;
+}
+
+.currency-btn label{
+	padding: 0 .5rem;
+	border: solid 1px grey;
+}
+
+.currency-btn input:checked + label{
+	background-color: rgb(201, 95, 2);
+}
+
 input {
 	width: 10rem;
 	border: solid .1px rgb(201, 95, 2);
