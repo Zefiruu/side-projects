@@ -38,13 +38,12 @@ main {
 	display: flex;
 	flex-direction: column;
 	padding-top: 3rem;
+	margin-left: 2rem;
 }
 
 .currency-btn {
-	width: 6rem;
 	margin-left: 2rem;
 	display: flex;
-	justify-content: space-evenly;
 }
 
 
@@ -57,13 +56,22 @@ main {
 .currency-btn label{
 	padding: 0 .5rem;
 	border: solid 1px grey;
+	width: 2rem;
+	height: 2rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: .5rem;
 }
-
+.currency-btn input:hover {
+	cursor: pointer;
+}
 .currency-btn input:checked + label{
 	background-color: rgb(201, 95, 2);
 }
 
 input {
 	width: 10rem;
+	padding: .5rem;
 	border: solid .1px rgb(201, 95, 2);
 }
